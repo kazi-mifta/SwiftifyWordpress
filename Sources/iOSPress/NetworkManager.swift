@@ -7,7 +7,7 @@ class NetworkManager {
         // Construction of URL
         var components = URLComponents()
         components.scheme = "https"
-        components.host = baseURL
+        components.host = baseUrl
         components.path = "/wp-json/wp/v2/posts"
         components.queryItems = []
         

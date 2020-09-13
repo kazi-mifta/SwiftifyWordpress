@@ -23,7 +23,7 @@ struct PostRowView: View {
                     // Note: Data exist only when queried from disk cache or network. Use `.queryMemoryData` if you really need data
                 }
                 .resizable()
-                .placeholder(Rectangle().foregroundColor(.gray))
+                .placeholder(Image(systemName: "photo")) 
                 .indicator(.activity) // Activity Indicator
                 .transition(.fade(duration: 0.5)) // Fade Transition with duration
                 .scaledToFit()
