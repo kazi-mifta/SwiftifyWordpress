@@ -9,10 +9,10 @@
 import Foundation
 import SwiftUI
 
-@available(iOS 13.0)
+@available(iOS 13.0, *)
 public struct PostsListView: View {
     public init(baseUrl: String) {
-        self.url = baseUrl`
+        self.url = baseUrl
     }
     @State var posts: [Post] = []
     var url:String
