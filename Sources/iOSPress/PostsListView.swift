@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct PostsListView: View {
+public struct PostsListView: View {
     @State var posts: [Post] = []
     var url:String
     var body: some View {
