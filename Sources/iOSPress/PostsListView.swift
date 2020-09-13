@@ -9,10 +9,14 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 13.0)
 public struct PostsListView: View {
+    public init(baseUrl: String) {
+        self.url = baseUrl`
+    }
     @State var posts: [Post] = []
     var url:String
-    var body: some View {
+    public var body: some View {
         NavigationView {
             List(posts) { (post) in
                 PostRowView(post: post)
