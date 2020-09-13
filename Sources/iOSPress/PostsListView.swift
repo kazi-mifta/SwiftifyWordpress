@@ -24,7 +24,7 @@ struct PostsListView: View {
     }
     
     func loadPosts() {
-        NetworkManager.request(baseUrl: url) {
+        NetworkManager.request(baseUrl: self.url ) {
             (result: Result<[Post], Error>) in
             switch result {
             case .success(let response):
@@ -33,12 +33,5 @@ struct PostsListView: View {
                 print(error)
             }
         }
-    }
-    
-}
-
-struct PostsListView_Previews: PreviewProvider {
-    static var previews: some View {
-        PostsListView()
     }
 }

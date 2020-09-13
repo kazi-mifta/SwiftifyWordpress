@@ -2,7 +2,7 @@ import Foundation
 
 class NetworkManager {
     
-    class func request<T: Codable>(baseURL : String, completion: @escaping (Result<T , Error>) -> ()) {
+    class func request<T: Codable>(baseUrl : String, completion: @escaping (Result<T , Error>) -> ()) {
         
         // Construction of URL
         var components = URLComponents()
@@ -15,7 +15,7 @@ class NetworkManager {
         
         // Adding additional components to the request. eg - Headers, Body etc
         var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = endpoint.method
+        urlRequest.httpMethod = "GET"
         
         let session = URLSession(configuration: .default)
         let dataTask = session.dataTask(with: urlRequest) { data, response, error in
@@ -27,7 +27,6 @@ class NetworkManager {
             }
             
             guard response != nil, let data = data else { return }
-            data.printJSON()// debug purpose
             
             DispatchQueue.main.async {
                 
@@ -44,4 +43,24 @@ class NetworkManager {
         }
         dataTask.resume()
     }
+}
+
+extension DateFormatter {
+    static let standardT: DateFormatter = {
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        return dateFormatter
+    }()
+
+    static let standard: DateFormatter = {
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return dateFormatter
+    }()
+
+    static let yearMonthDay: DateFormatter = {
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter
+    }()
 }

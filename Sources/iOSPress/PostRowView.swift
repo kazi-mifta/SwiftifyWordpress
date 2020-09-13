@@ -23,7 +23,7 @@ struct PostRowView: View {
                     // Note: Data exist only when queried from disk cache or network. Use `.queryMemoryData` if you really need data
                 }
                 .resizable()
-                .placeholder(Image("placeholder"))
+                .placeholder(Rectangle().foregroundColor(.gray))
                 .indicator(.activity) // Activity Indicator
                 .transition(.fade(duration: 0.5)) // Fade Transition with duration
                 .scaledToFit()
@@ -43,5 +43,14 @@ struct PostRowView: View {
             NavigationLink("", destination: PostWebView(postUrl: post.link!)).frame(width: 5, height: 10, alignment: .trailing)
         }
         
+    }
+}
+
+
+extension Date {
+    func toString(format: String) -> String {
+        let dateformat = DateFormatter()
+        dateformat.dateFormat = format
+        return dateformat.string(from: self)
     }
 }
