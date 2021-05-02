@@ -10,21 +10,21 @@ import Foundation
 import SwiftUI
 import WebKit
 
-struct PostWebView: UIViewRepresentable {
+struct PostWebView: UIViewControllerRepresentable {
     
     var postUrl: String
     
-    func makeUIView(context: Context) -> WKWebView {
-        guard let url = URL(string: self.postUrl) else { return WKWebView() }
+    func makeUIViewController(context: Context) -> WebviewController {
+        guard let url = URL(string: postUrl) else { return WebviewController() }
+
+        let webviewController = WebviewController()
+        let request = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        webviewController.webview.load(request)
         
-        let request = URLRequest(url: url)
-        let wkWebView = WKWebView()
-        wkWebView.load(request)
-        wkWebView.allowsBackForwardNavigationGestures = true
-        return wkWebView
+        return webviewController
     }
     
-    func updateUIView(_ uiView: WKWebView, context: Context) {
-        
+    func updateUIViewController(_ webviewController: WebviewController, context: Context) {
+                
     }
 }

@@ -8,15 +8,17 @@ class NetworkManager {
         var components = URLComponents()
         components.scheme = "https"
         components.host = baseUrl
-        components.path = "/wp-json/wp/v2/posts"
-        components.queryItems = []
+        components.path = "/wp-json/wp/v2/posts/"
+        components.queryItems = [
+            URLQueryItem(name: "per_page", value: "20")
+        ]
         
         guard let url = components.url else { return }
         
         // Adding additional components to the request. eg - Headers, Body etc
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = "GET"
-        
+                
         let session = URLSession(configuration: .default)
         let dataTask = session.dataTask(with: urlRequest) { data, response, error in
             

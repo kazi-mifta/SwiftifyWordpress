@@ -14,7 +14,7 @@ struct PostRowView: View {
     var post: Post
     var body: some View {
         
-        HStack(spacing: 24.0) {
+        HStack(spacing: 20.0) {
             // if there is no featured media is nil then ImageView won't be created___
             post.featuredMediaUrl.map { url in
                 WebImage(url: URL(string: url))
@@ -23,13 +23,13 @@ struct PostRowView: View {
                     // Note: Data exist only when queried from disk cache or network. Use `.queryMemoryData` if you really need data
                 }
                 .resizable()
-                .placeholder(Image(systemName: "photo")) 
+                .placeholder(Image("placeholder"))
                 .indicator(.activity) // Activity Indicator
                 .transition(.fade(duration: 0.5)) // Fade Transition with duration
                 .scaledToFit()
                 .cornerRadius(10)
                 .shadow(color: .gray, radius: 10.0, x: 4.0, y: 4.0)
-                .frame(width: 150, height: 100, alignment: .center)
+                .frame(width: 110, height: 100, alignment: .center)
             }
             // ____
             
