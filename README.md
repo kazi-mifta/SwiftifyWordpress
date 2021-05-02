@@ -9,19 +9,21 @@
 <br />
 <p align="center">
   <a href="https://github.com/kazi-mifta/iOSPress">
-    <img src="Readme_Assets/iOSPress_Logo.png" alt="Logo" width="80" height="80">
+    <img src="Readme_Assets/iOSPress_Logo.png" alt="Logo">
   </a>
   <p align="center">
-  
-    Turn Your WordPress Website into a Native iOS App. Just Simply add the framework through swift package manager.
   </p>
 </p>
 
+Turn Your WordPress Website into a Native iOS App. Just Simply add the framework through swift package manager.
+
 <p align="row">
-<img src= "Readme_Assets/screen_1.jpg" width="250" >
-<img src= "Readme_Assets/screen_2.jpg" width="250" >
-<img src= "Readme_Assets/screen_3.jpg" width="250" >
+<img src= "Readme_Assets/screen_1.jpg" width="260" >
+<img src= "Readme_Assets/screen_2.jpg" width="260" >
+<img src= "Readme_Assets/screen_3.jpg" width="260" >
 </p>
+
+
 
 ## Features
 
