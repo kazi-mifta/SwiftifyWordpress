@@ -18,9 +18,8 @@
 Turn Your WordPress Website into a Native iOS App. Just Simply add the framework through swift package manager.
 
 <p align="row">
-<img src= "Readme_Assets/screen_1.jpg" width="260" >
-<img src= "Readme_Assets/screen_2.jpg" width="260" >
-<img src= "Readme_Assets/screen_3.jpg" width="260" >
+<img src= "Readme_Assets/screen_1.png" width="260" >
+<img src= "Readme_Assets/screen_2.png" width="260" >
 </p>
 
 
@@ -32,6 +31,14 @@ Turn Your WordPress Website into a Native iOS App. Just Simply add the framework
 - Show all Posts of a Website through Pagination
 -  Extend Browser features
 -  Categorize Posts According to tags
+
+## Techonologies Used
+
+- Swift, SwiftUI
+- URLSession
+- WebKit
+- JSON Parsing, Codable
+
 
 ## Requirements
 
