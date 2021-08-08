@@ -42,7 +42,7 @@ public struct PostsListView: View {
 }
 
 extension PostsListView {
-    init(with data: PostsData) {
+    public init(with data: PostsData) {
         postsData = data
     }
 }
