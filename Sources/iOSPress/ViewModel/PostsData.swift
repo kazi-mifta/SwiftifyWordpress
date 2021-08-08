@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import SwiftUI
 
-class PostsData: ObservableObject {
+public class PostsData: ObservableObject {
     
     public init(url: String){
         baseURL = url
