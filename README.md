@@ -1,4 +1,5 @@
 
+
 [![Swift Version][swift-image]][swift-url]
 [![License][license-image]][license-url]
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
@@ -28,16 +29,16 @@ Turn Your WordPress Website into a Native iOS App. Just Simply add the framework
 
 - [x] Show latest 20 posts from blog
 - [x] In-App Browser 
-- Show all Posts of a Website through Pagination
--  Extend Browser features
+- [x] Show all Posts of a Website through Pagination
+- [x] Extend Browser features
 -  Categorize Posts According to tags
 
 ## Techonologies Used
 
 - Swift, SwiftUI
-- URLSession
-- WebKit
-- JSON Parsing, Codable
+- MVVM
+- URLSession(Network Layer)
+- Codable(JSON Parsing)
 
 
 ## Requirements
@@ -57,24 +58,24 @@ For App integration, you should using Xcode 12 or higher, to add this package to
 
 
 #### Manually
-1. Download the files in Sources\iOSPress and use the PostListView with your site's URL. Don't forget to add the dependencies. This project requires SDWebImageSwiftUI.
+Download the files in Sources\iOSPress and use the PostListView with your site's URL. Don't forget to add the dependencies. This project requires SDWebImageSwiftUI.
 ```swift
 struct ContentView: View {
     var body: some View {
-        // PostsListView(baseUrl: "Your Website's Base URL")
-        PostsListView(baseUrl: "gadgetanalysis.com")
+        // PostsListView(with: PostsData(url: "Your Website's Base URL"))
+        PostsListView(with: PostsData(url: "gadgetanalysis.com"))
     }
 }
 ```
 ## Usage example 
-
+After importing the package you can add the list view of Posts using a single line in your View's Body.
 ```swift
 import iOSPress
 
 struct ContentView: View {
     var body: some View {
         // PostsListView(baseUrl: "Your Website's Base URL")
-        PostsListView(baseUrl: "gadgetanalysis.com")
+        PostsListView(with: PostsData(url: "gadgetanalysis.com"))
     }
 }
 ```
@@ -86,9 +87,9 @@ I would really appreciate your contribution to **iOSPress**. Feel Free to contac
 ## Contact
 
 Kazi Miftahul Hoque – kazimifta13@gmail.com
-[https://github.com/kazi-mifta/](https://github.com/kazi-mifta/)
 
 ## License
+
 iOSPress is available under the GPLv3 license. See ``LICENSE`` for more information.
 
 

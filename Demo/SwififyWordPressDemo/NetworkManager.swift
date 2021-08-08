@@ -11,6 +11,7 @@ enum APIError: String,Error {
     case unknown = "Unkown Error During Network Request"
 }
 
+
 class NetworkManager {
     
     class func request<T: Codable>(baseUrl : String,pageNo: Int = 1, completion: @escaping (Result<T , Error>) -> ()) {
@@ -56,7 +57,7 @@ class NetworkManager {
                     decoder.dateDecodingStrategy = .formatted(DateFormatter.standardT)
                     if let responseObject = try? decoder.decode(T.self, from: data) {
                         completion(.success(responseObject))
-                    } else {// JSON Parsing Error
+                    } else {
                         completion(.failure(APIError.parseError))
                     }
                 }
@@ -72,10 +73,7 @@ class NetworkManager {
     }
 }
 
-// The WordPress REST API returns the date with a special Format
-// which uses a 'T' between the date and time
 extension DateFormatter {
-    // This type of Date is returned from the server
     static let standardT: DateFormatter = {
         var dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"

@@ -2,13 +2,6 @@ import XCTest
 @testable import iOSPress
 
 final class iOSPressTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        //XCTAssertEqual(iOSPress().text, "Hello, World!")
-    }
-    
     func testJSONMapping() throws {
         
         let json = """
@@ -40,22 +33,18 @@ final class iOSPressTests: XCTestCase {
     }
     
     func testAsyncNetworkCall() {
-        let expectation = XCTestExpectation(description: "We should wait 10 sec")
+        let expectation = XCTestExpectation(description: "We should wait 20 sec")
         
-        NetworkManager.request(baseUrl: "winningwp.com") { [weak expectation]
+        NetworkManager.request(baseUrl: "gadgetanalysis.com") { [weak expectation]
             (result: Result<[Post], Error>) in
             switch result {
             case .success(let response):
-                XCTAssertEqual(response.count, 20,"For now the request returns 20 post")
+                XCTAssertEqual(response.count, 10,"For now the request returns 10 post")
                 expectation?.fulfill()
             case .failure(_):
                 break
             }
         }
-        self.wait(for: [expectation], timeout: 10)
+        self.wait(for: [expectation], timeout: 20)
     }
-    
-    static var allTests = [
-        ("testExample", testExample),
-    ]
 }
