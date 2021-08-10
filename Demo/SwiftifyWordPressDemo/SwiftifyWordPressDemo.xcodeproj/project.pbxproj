@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A40D6C526C24BDD0098A112 /* iOSPress in Frameworks */ = {isa = PBXBuildFile; productRef = 6A40D6C426C24BDD0098A112 /* iOSPress */; };
 		6AE2C05B26C053F900E7B8AB /* SwiftifyWordPressDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C05A26C053F900E7B8AB /* SwiftifyWordPressDemoApp.swift */; };
 		6AE2C05D26C053F900E7B8AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C05C26C053F900E7B8AB /* ContentView.swift */; };
 		6AE2C05F26C053FA00E7B8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C05E26C053FA00E7B8AB /* Assets.xcassets */; };
 		6AE2C06226C053FA00E7B8AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C06126C053FA00E7B8AB /* Preview Assets.xcassets */; };
-		6AE2C06C26C0544300E7B8AB /* iOSPress in Frameworks */ = {isa = PBXBuildFile; productRef = 6AE2C06B26C0544300E7B8AB /* iOSPress */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AE2C06C26C0544300E7B8AB /* iOSPress in Frameworks */,
+				6A40D6C526C24BDD0098A112 /* iOSPress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			);
 			name = SwiftifyWordPressDemo;
 			packageProductDependencies = (
-				6AE2C06B26C0544300E7B8AB /* iOSPress */,
+				6A40D6C426C24BDD0098A112 /* iOSPress */,
 			);
 			productName = SwiftifyWordPressDemo;
 			productReference = 6AE2C05726C053F900E7B8AB /* SwiftifyWordPressDemo.app */;
@@ -118,7 +118,7 @@
 			);
 			mainGroup = 6AE2C04E26C053F900E7B8AB;
 			packageReferences = (
-				6AE2C06A26C0544300E7B8AB /* XCRemoteSwiftPackageReference "iOSPress" */,
+				6A40D6C326C24BDD0098A112 /* XCRemoteSwiftPackageReference "iOSPress" */,
 			);
 			productRefGroup = 6AE2C05826C053F900E7B8AB /* Products */;
 			projectDirPath = "";
@@ -338,20 +338,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6AE2C06A26C0544300E7B8AB /* XCRemoteSwiftPackageReference "iOSPress" */ = {
+		6A40D6C326C24BDD0098A112 /* XCRemoteSwiftPackageReference "iOSPress" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kazi-mifta/iOSPress";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6AE2C06B26C0544300E7B8AB /* iOSPress */ = {
+		6A40D6C426C24BDD0098A112 /* iOSPress */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6AE2C06A26C0544300E7B8AB /* XCRemoteSwiftPackageReference "iOSPress" */;
+			package = 6A40D6C326C24BDD0098A112 /* XCRemoteSwiftPackageReference "iOSPress" */;
 			productName = iOSPress;
 		};
 /* End XCSwiftPackageProductDependency section */

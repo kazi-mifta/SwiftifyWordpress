@@ -21,6 +21,7 @@ Turn Your WordPress Website into a Native iOS App. Just Simply add the framework
 <p align="row">
 <img src= "Readme_Assets/screen_1.png" width="260" >
 <img src= "Readme_Assets/screen_2.png" width="260" >
+<img src= "Readme_Assets/screen_3.png" width="260" >
 </p>
 
 

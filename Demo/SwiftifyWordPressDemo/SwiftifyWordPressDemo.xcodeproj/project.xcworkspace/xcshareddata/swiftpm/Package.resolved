@@ -5,9 +5,9 @@
         "package": "iOSPress",
         "repositoryURL": "https://github.com/kazi-mifta/iOSPress",
         "state": {
-          "branch": "master",
-          "revision": "f5e7535f7ee5430a496069f0d5cd240d47d71268",
-          "version": null
+          "branch": null,
+          "revision": "37f307a60b638c91de4a48a258f4045157009b70",
+          "version": "1.0.2"
         }
       },
       {

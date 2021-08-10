@@ -9,7 +9,7 @@ import SwiftUI
 import iOSPress
 struct ContentView: View {
     var body: some View {
-        PostsListView(with: PostsData(url: "gadgetanalysis.com")
+        PostsListView(with: PostsData(url: "gadgetanalysis.com"))
     }
 }
 
