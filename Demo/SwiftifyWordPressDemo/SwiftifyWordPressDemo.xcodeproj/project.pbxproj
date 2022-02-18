@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A40D6C526C24BDD0098A112 /* iOSPress in Frameworks */ = {isa = PBXBuildFile; productRef = 6A40D6C426C24BDD0098A112 /* iOSPress */; };
+		371A51F627BFA9220066319C /* iOSPress in Frameworks */ = {isa = PBXBuildFile; productRef = 371A51F527BFA9220066319C /* iOSPress */; };
 		6AE2C05B26C053F900E7B8AB /* SwiftifyWordPressDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C05A26C053F900E7B8AB /* SwiftifyWordPressDemoApp.swift */; };
 		6AE2C05D26C053F900E7B8AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE2C05C26C053F900E7B8AB /* ContentView.swift */; };
 		6AE2C05F26C053FA00E7B8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AE2C05E26C053FA00E7B8AB /* Assets.xcassets */; };
@@ -15,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		371A51EE27BFA83C0066319C /* SwiftifyWordpress */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftifyWordpress; path = ../..; sourceTree = "<group>"; };
+		371A51F227BFA86D0066319C /* SwiftifyWordpress */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftifyWordpress; path = ../..; sourceTree = "<group>"; };
 		6AE2C05726C053F900E7B8AB /* SwiftifyWordPressDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftifyWordPressDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE2C05A26C053F900E7B8AB /* SwiftifyWordPressDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftifyWordPressDemoApp.swift; sourceTree = "<group>"; };
 		6AE2C05C26C053F900E7B8AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,18 +30,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A40D6C526C24BDD0098A112 /* iOSPress in Frameworks */,
+				371A51F627BFA9220066319C /* iOSPress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371A51ED27BFA83C0066319C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				371A51EE27BFA83C0066319C /* SwiftifyWordpress */,
+				371A51F227BFA86D0066319C /* SwiftifyWordpress */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		371A51F427BFA9220066319C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6AE2C04E26C053F900E7B8AB = {
 			isa = PBXGroup;
 			children = (
+				371A51ED27BFA83C0066319C /* Packages */,
 				6AE2C05926C053F900E7B8AB /* SwiftifyWordPressDemo */,
 				6AE2C05826C053F900E7B8AB /* Products */,
+				371A51F427BFA9220066319C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +108,7 @@
 			);
 			name = SwiftifyWordPressDemo;
 			packageProductDependencies = (
-				6A40D6C426C24BDD0098A112 /* iOSPress */,
+				371A51F527BFA9220066319C /* iOSPress */,
 			);
 			productName = SwiftifyWordPressDemo;
 			productReference = 6AE2C05726C053F900E7B8AB /* SwiftifyWordPressDemo.app */;
@@ -118,7 +138,6 @@
 			);
 			mainGroup = 6AE2C04E26C053F900E7B8AB;
 			packageReferences = (
-				6A40D6C326C24BDD0098A112 /* XCRemoteSwiftPackageReference "iOSPress" */,
 			);
 			productRefGroup = 6AE2C05826C053F900E7B8AB /* Products */;
 			projectDirPath = "";
@@ -337,21 +356,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		6A40D6C326C24BDD0098A112 /* XCRemoteSwiftPackageReference "iOSPress" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kazi-mifta/iOSPress";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		6A40D6C426C24BDD0098A112 /* iOSPress */ = {
+		371A51F527BFA9220066319C /* iOSPress */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6A40D6C326C24BDD0098A112 /* XCRemoteSwiftPackageReference "iOSPress" */;
 			productName = iOSPress;
 		};
 /* End XCSwiftPackageProductDependency section */

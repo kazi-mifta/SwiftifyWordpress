@@ -2,15 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "iOSPress",
-        "repositoryURL": "https://github.com/kazi-mifta/iOSPress",
-        "state": {
-          "branch": null,
-          "revision": "37f307a60b638c91de4a48a258f4045157009b70",
-          "version": "1.0.2"
-        }
-      },
-      {
         "package": "SDWebImage",
         "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
         "state": {
