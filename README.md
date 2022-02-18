@@ -34,7 +34,7 @@ Turn Your WordPress Website into a Native iOS App. Just Simply add the framework
 
 - [x] Show all posts of a website through pagination
 - [x] In-App browser 
-- [x] Search posts
+- [x] Search posts([iOS 15 or up](https://developer.apple.com/documentation/swiftui/form/searchable(text:placement:)))
 - [x] iPad Support
 -  Categorize Posts According to tags
 
@@ -77,7 +77,7 @@ import SwiftifyWordPress
 
 struct ContentView: View {
     var body: some View {
-        // PostsListView(baseUrl: "Your Website's Base URL")
+        //PostsListView(with: PostsData(url: "Your Website's Base URL"))
         PostsListView(with: PostsData(url: "gadgetanalysis.com"))
     }
 }
